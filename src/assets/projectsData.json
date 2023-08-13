@@ -1,0 +1,16 @@
+{
+  "capehouse": {
+    "name": "Cape House Sharing",
+    "desc": "Hi this is a made up project desc for cape house",
+    "url": "",
+    "git": "https://github.com/MayKhine/capeProject",
+    "technology": "TypeScript, REACT"
+  },
+  "todoapp": {
+    "name": "Todo App",
+    "desc": "Organize, prioritize, and conquer your to-do list effortlessly. With a user-friendly interface and intuitive features, this Todo app helps you stay focused and achieve more. Say goodbye to chaos and hello to productivity.",
+    "url": "https://maykhine.github.io/todo-app/",
+    "git": "https://github.com/MayKhine/todo-app",
+    "technology": "JavaScript, REACT"
+  }
+}
