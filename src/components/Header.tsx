@@ -7,7 +7,7 @@ const ButtonStyle = {
   borderRadius: "8px",
 };
 export const Header = () => {
-  const navigation = useNavigate();
+  const navigate = useNavigate();
 
   return (
     <motion.div
@@ -25,7 +25,7 @@ export const Header = () => {
         <Button
           sx={ButtonStyle}
           onClick={() => {
-            navigation("/");
+            navigate("/");
           }}
         >
           Home
@@ -33,7 +33,7 @@ export const Header = () => {
         <Button
           sx={ButtonStyle}
           onClick={() => {
-            navigation("/Projects");
+            navigate("/Projects");
           }}
         >
           Projects
@@ -41,7 +41,7 @@ export const Header = () => {
         <Button
           sx={ButtonStyle}
           onClick={() => {
-            navigation("/About");
+            navigate("/About");
           }}
         >
           About
@@ -49,7 +49,7 @@ export const Header = () => {
         <Button
           sx={ButtonStyle}
           onClick={() => {
-            navigation("/Contact");
+            navigate("/Contact");
           }}
         >
           Contact
