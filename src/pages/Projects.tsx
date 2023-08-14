@@ -2,10 +2,7 @@ import { motion } from "framer-motion";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Card from "@mui/material/Card";
-import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
-import { CardActionArea } from "@mui/material";
-// import pj1ImgUrl from "../assets/images/test.png";
 import Grid from "@mui/material/Grid";
 import { useNavigate } from "react-router-dom";
 import projectsData from "../assets/projectsData.json";
@@ -13,9 +10,7 @@ import AspectRatio from "@mui/joy/AspectRatio";
 
 export const Projects = () => {
   const navigate = useNavigate();
-  const projImages = [
-    "https://github.com/MayKhine/portfolio/blob/main/src/assets/images/capeHouseSharing/img%201.51.03%20PM.png?raw=true",
-  ];
+
   return (
     <>
       <motion.div
