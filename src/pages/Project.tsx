@@ -8,16 +8,7 @@ import { useState } from "react";
 import { wrap } from "popmotion";
 import ArrowBackIosRoundedIcon from "@mui/icons-material/ArrowBackIosRounded";
 import ArrowForwardIosRoundedIcon from "@mui/icons-material/ArrowForwardIosRounded";
-import { Card, CardMedia, CardContent, CardAction } from "@mui/material";
-// import CardMedia from "@mui/material/CardMedia";
-// import CardContent from "@mui/material/CardContent";
-// import CardActions from "@mui/material/CardActions";
-// export const images = [
-//   "https://d33wubrfki0l68.cloudfront.net/dd23708ebc4053551bb33e18b7174e73b6e1710b/dea24/static/images/wallpapers/shared-colors@2x.png",
-//   "https://d33wubrfki0l68.cloudfront.net/49de349d12db851952c5556f3c637ca772745316/cfc56/static/images/wallpapers/bridge-02@2x.png",
-//   "https://d33wubrfki0l68.cloudfront.net/594de66469079c21fc54c14db0591305a1198dd6/3f4b1/static/images/wallpapers/bridge-01@2x.png",
-//   "https://raw.githubusercontent.com/MayKhine/capeProject/main/public/img/img%201.51.03%20PM.png",
-// ];
+import { Card, CardMedia, CardContent } from "@mui/material";
 
 export const Project = () => {
   const location = useLocation();

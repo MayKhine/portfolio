@@ -6,11 +6,11 @@
     "git": "https://github.com/MayKhine/capeProject",
     "technology": "TypeScript, REACT",
     "img": [
-      "https://raw.githubusercontent.com/MayKhine/capeProject/main/public/img/img%201.51.03%20PM.png",
-      "https://github.com/MayKhine/capeProject/blob/main/public/img/img%201.51.44%20PM.png?raw=true",
-      "https://github.com/MayKhine/capeProject/blob/main/public/img/img%201.52.26%20PM.png?raw=true",
-      "https://github.com/MayKhine/capeProject/blob/main/public/img/img%201.54.00%20PM.png?raw=true",
-      "https://github.com/MayKhine/capeProject/blob/main/public/img/img%201.55.12%20PM.png?raw=true"
+      "https://github.com/MayKhine/portfolio/blob/main/src/assets/images/capeHouseSharing/img%201.51.03%20PM.png?raw=true",
+      "https://github.com/MayKhine/portfolio/blob/main/src/assets/images/capeHouseSharing/img%201.51.33%20PM.png?raw=true",
+      "https://github.com/MayKhine/portfolio/blob/main/src/assets/images/capeHouseSharing/img%201.53.14%20PM.png?raw=true",
+      "https://github.com/MayKhine/portfolio/blob/main/src/assets/images/capeHouseSharing/img%201.54.00%20PM.png?raw=true",
+      "https://github.com/MayKhine/portfolio/blob/main/src/assets/images/capeHouseSharing/img%201.55.12%20PM.png?raw=true"
     ]
   },
   "todoapp": {
@@ -18,6 +18,25 @@
     "desc": "Organize, prioritize, and conquer your to-do list effortlessly. With a user-friendly interface and intuitive features, this Todo app helps you stay focused and achieve more. Say goodbye to chaos and hello to productivity.",
     "url": "https://maykhine.github.io/todo-app/",
     "git": "https://github.com/MayKhine/todo-app",
-    "technology": "JavaScript, REACT"
+    "technology": "JavaScript, REACT",
+    "img": [
+      "https://github.com/MayKhine/portfolio/blob/main/src/assets/images/todoApp/img.png?raw=true",
+      "https://github.com/MayKhine/portfolio/blob/main/src/assets/images/todoApp/img2.png?raw=true",
+      "https://github.com/MayKhine/portfolio/blob/main/src/assets/images/todoApp/img3.png?raw=true",
+      "https://github.com/MayKhine/portfolio/blob/main/src/assets/images/todoApp/img4.png?raw=true",
+      "https://github.com/MayKhine/portfolio/blob/main/src/assets/images/todoApp/img5.png?raw=true"
+    ]
+  },
+  "restaurantpage": {
+    "name": "Restaurant Page",
+    "desc": "A simple restaurant page to showcase menus and contact",
+    "url": "https://maykhine.github.io/todo-app/",
+    "git": "https://github.com/MayKhine/todo-app",
+    "technology": "JavaScript, REACT",
+    "img": [
+      "https://github.com/MayKhine/portfolio/blob/main/src/assets/images/restaurantPage/img.png?raw=true",
+      "https://github.com/MayKhine/portfolio/blob/main/src/assets/images/restaurantPage/img2.png?raw=true",
+      "https://github.com/MayKhine/portfolio/blob/main/src/assets/images/restaurantPage/img3.png?raw=true"
+    ]
   }
 }

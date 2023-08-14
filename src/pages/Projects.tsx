@@ -8,11 +8,12 @@ import { CardActionArea } from "@mui/material";
 // import pj1ImgUrl from "../assets/images/test.png";
 import Grid from "@mui/material/Grid";
 import { useNavigate } from "react-router-dom";
+import projectsData from "../assets/projectsData.json";
 
 export const Projects = () => {
   const navigate = useNavigate();
   const projImages = [
-    "https://raw.githubusercontent.com/MayKhine/capeProject/main/public/img/img%201.51.03%20PM.png",
+    "https://github.com/MayKhine/portfolio/blob/main/src/assets/images/capeHouseSharing/img%201.51.03%20PM.png?raw=true",
   ];
   return (
     <>
@@ -42,9 +43,9 @@ export const Projects = () => {
                   <CardActionArea>
                     <CardMedia
                       component="img"
-                      image={projImages[0]}
+                      image={projectsData.capehouse.img[0]}
                       alt="Project test image"
-                      sx={{ width: "400px", height: "400px" }}
+                      // sx={{ width: "400px", height: "400px" }}
                     />
                     <CardContent>
                       <Typography gutterBottom variant="h5" component="div">
@@ -73,9 +74,9 @@ export const Projects = () => {
                   <CardActionArea>
                     <CardMedia
                       component="img"
-                      image={projImages[0]}
+                      image={projectsData.todoapp.img[0]}
                       alt="Project test image"
-                      sx={{ width: "400px", height: "400px" }}
+                      // sx={{ width: "500px", height: "300px" }}
                     />
                     <CardContent>
                       <Typography gutterBottom variant="h5" component="div">
@@ -96,20 +97,25 @@ export const Projects = () => {
                 whileHover={{ scale: 1.1 }}
                 transition={{ type: "spring", bounce: 0.6, duration: 0.8 }}
               >
-                <Card sx={{ width: "500px", height: "500px" }}>
+                <Card
+                  sx={{ width: "500px", height: "500px" }}
+                  onClick={() => {
+                    navigate(`/Projects/${"restaurantPage"}`);
+                  }}
+                >
                   <CardActionArea>
                     <CardMedia
                       component="img"
-                      image={projImages[0]}
+                      image={projectsData.restaurantpage.img[0]}
                       alt="Project test image"
                       sx={{ width: "400px", height: "400px" }}
                     />
                     <CardContent>
                       <Typography gutterBottom variant="h5" component="div">
-                        Project
+                        Bagan Restaurant
                       </Typography>
                       <Typography variant="body2" color="text.secondary">
-                        Project subtitle
+                        A simple restaurant page
                       </Typography>
                     </CardContent>
                   </CardActionArea>
