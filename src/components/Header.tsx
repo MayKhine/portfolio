@@ -14,6 +14,7 @@ export const Header = () => {
       initial={{ opacity: 0, scale: 0.1 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 1 }}
+      style={{ height: "50px" }}
     >
       <div
         style={{

@@ -9,6 +9,7 @@ import { CardActionArea } from "@mui/material";
 import Grid from "@mui/material/Grid";
 import { useNavigate } from "react-router-dom";
 import projectsData from "../assets/projectsData.json";
+import AspectRatio from "@mui/joy/AspectRatio";
 
 export const Projects = () => {
   const navigate = useNavigate();
@@ -35,28 +36,31 @@ export const Projects = () => {
                 transition={{ type: "spring", bounce: 0.6, duration: 0.8 }}
               >
                 <Card
-                  sx={{ width: "500px" }}
+                  sx={cardStyle}
                   onClick={() => {
                     navigate(`/Projects/${"CapeHouse"}`);
                   }}
                 >
-                  <CardActionArea>
-                    <CardMedia
-                      component="img"
-                      image={projectsData.capehouse.img[0]}
-                      alt="Project test image"
-                      // sx={{ width: "400px", height: "400px" }}
+                  <AspectRatio
+                    objectFit="contain"
+                    ratio="4/3"
+                    sx={{ height: "380px" }}
+                  >
+                    <img
+                      style={imgStyle}
+                      src={projectsData.capehouse.img[0]}
+                      alt="Cape Cod Sharing Project"
                     />
-                    <CardContent>
-                      <Typography gutterBottom variant="h5" component="div">
-                        Cape House Sharing
-                      </Typography>
-                      <Typography variant="body2" color="text.secondary">
-                        A web app to visualize availabilty, to make easy booking
-                        and to share the Cape Cod House among family members
-                      </Typography>
-                    </CardContent>
-                  </CardActionArea>
+                  </AspectRatio>
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      Cape House Sharing
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      A web app to visualize availabilty, to make easy booking
+                      and to share the Cape Cod House among family members
+                    </Typography>
+                  </CardContent>
                 </Card>
               </motion.div>
             </Grid>
@@ -66,29 +70,31 @@ export const Projects = () => {
                 transition={{ type: "spring", bounce: 0.6, duration: 0.8 }}
               >
                 <Card
-                  sx={{ width: "500px" }}
+                  sx={cardStyle}
                   onClick={() => {
                     navigate(`/Projects/${"todoApp"}`);
                   }}
                 >
-                  <CardActionArea>
-                    <CardMedia
-                      component="img"
-                      image={projectsData.todoapp.img[0]}
-                      alt="Project test image"
-                      // sx={{ width: "500px", height: "300px" }}
+                  <AspectRatio
+                    objectFit="contain"
+                    ratio="4/3"
+                    sx={{ height: "380px" }}
+                  >
+                    <img
+                      style={imgStyle}
+                      src={projectsData.todoapp.img[0]}
+                      alt="Todo App Project"
                     />
-                    <CardContent>
-                      <Typography gutterBottom variant="h5" component="div">
-                        Todo App
-                      </Typography>
-                      <Typography variant="body2" color="text.secondary">
-                        A task management app to organize, prioritize and
-                        conquer to-do list effortlessly. Say 'Hello' to
-                        productivity!
-                      </Typography>
-                    </CardContent>
-                  </CardActionArea>
+                  </AspectRatio>
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      Todo App
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      A task management app to organize, prioritize and conquer
+                      to-do list effortlessly. Say 'Hello' to productivity!
+                    </Typography>
+                  </CardContent>
                 </Card>
               </motion.div>
             </Grid>
@@ -98,27 +104,30 @@ export const Projects = () => {
                 transition={{ type: "spring", bounce: 0.6, duration: 0.8 }}
               >
                 <Card
-                  sx={{ width: "500px", height: "500px" }}
+                  sx={cardStyle}
                   onClick={() => {
                     navigate(`/Projects/${"restaurantPage"}`);
                   }}
                 >
-                  <CardActionArea>
-                    <CardMedia
-                      component="img"
-                      image={projectsData.restaurantpage.img[0]}
-                      alt="Project test image"
-                      sx={{ width: "400px", height: "400px" }}
+                  <AspectRatio
+                    objectFit="contain"
+                    ratio="4/3"
+                    sx={{ height: "380px" }}
+                  >
+                    <img
+                      style={imgStyle}
+                      src={projectsData.restaurantpage.img[0]}
+                      alt="Restaurant Page"
                     />
-                    <CardContent>
-                      <Typography gutterBottom variant="h5" component="div">
-                        Bagan Restaurant
-                      </Typography>
-                      <Typography variant="body2" color="text.secondary">
-                        A simple restaurant page
-                      </Typography>
-                    </CardContent>
-                  </CardActionArea>
+                  </AspectRatio>
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      Bagan Restaurant
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      A simple restaurant page
+                    </Typography>
+                  </CardContent>
                 </Card>
               </motion.div>
             </Grid>
@@ -127,4 +136,14 @@ export const Projects = () => {
       </motion.div>
     </>
   );
+};
+
+const cardStyle = {
+  width: "500px",
+  height: "500px",
+  backgroundColor: "white",
+};
+
+const imgStyle = {
+  backgroundColor: "white",
 };
