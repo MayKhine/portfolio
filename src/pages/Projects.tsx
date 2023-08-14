@@ -13,7 +13,6 @@ export const Projects = () => {
   const navigate = useNavigate();
   return (
     <>
-      {" "}
       <motion.div
         initial={{ opacity: 0, x: "50vw" }}
         animate={{ opacity: 1, x: 0 }}
