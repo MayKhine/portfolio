@@ -4,7 +4,14 @@
     "desc": "Hi this is a made up project desc for cape house",
     "url": "",
     "git": "https://github.com/MayKhine/capeProject",
-    "technology": "TypeScript, REACT"
+    "technology": "TypeScript, REACT",
+    "img": [
+      "https://raw.githubusercontent.com/MayKhine/capeProject/main/public/img/img%201.51.03%20PM.png",
+      "https://github.com/MayKhine/capeProject/blob/main/public/img/img%201.51.44%20PM.png?raw=true",
+      "https://github.com/MayKhine/capeProject/blob/main/public/img/img%201.52.26%20PM.png?raw=true",
+      "https://github.com/MayKhine/capeProject/blob/main/public/img/img%201.54.00%20PM.png?raw=true",
+      "https://github.com/MayKhine/capeProject/blob/main/public/img/img%201.55.12%20PM.png?raw=true"
+    ]
   },
   "todoapp": {
     "name": "Todo App",

@@ -5,12 +5,15 @@ import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
 import { CardActionArea } from "@mui/material";
-import pj1ImgUrl from "../assets/images/test.png";
+// import pj1ImgUrl from "../assets/images/test.png";
 import Grid from "@mui/material/Grid";
 import { useNavigate } from "react-router-dom";
 
 export const Projects = () => {
   const navigate = useNavigate();
+  const projImages = [
+    "https://raw.githubusercontent.com/MayKhine/capeProject/main/public/img/img%201.51.03%20PM.png",
+  ];
   return (
     <>
       <motion.div
@@ -39,7 +42,7 @@ export const Projects = () => {
                   <CardActionArea>
                     <CardMedia
                       component="img"
-                      image={pj1ImgUrl}
+                      image={projImages[0]}
                       alt="Project test image"
                       sx={{ width: "400px", height: "400px" }}
                     />
@@ -70,7 +73,7 @@ export const Projects = () => {
                   <CardActionArea>
                     <CardMedia
                       component="img"
-                      image={pj1ImgUrl}
+                      image={projImages[0]}
                       alt="Project test image"
                       sx={{ width: "400px", height: "400px" }}
                     />
@@ -97,7 +100,7 @@ export const Projects = () => {
                   <CardActionArea>
                     <CardMedia
                       component="img"
-                      image={pj1ImgUrl}
+                      image={projImages[0]}
                       alt="Project test image"
                       sx={{ width: "400px", height: "400px" }}
                     />
