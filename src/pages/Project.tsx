@@ -32,13 +32,11 @@ export const Project = () => {
       <motion.div
         initial={{ opacity: 0, x: "50vw" }}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 0.7 }}
       >
         <Box>
           {images && (
-            <Card
-              sx={{ backgroundColor: "white", height: "calc(100vh - 50px)" }}
-            >
+            <Card sx={{ backgroundColor: "white" }}>
               <CardMedia>
                 <div
                   style={{
@@ -94,6 +92,7 @@ export const Project = () => {
                   justifyContent: "center",
                   margin: "10%",
                   marginTop: "250px",
+                  marginBottom: "10px",
                 }}
               >
                 <div

@@ -16,7 +16,7 @@ export const Projects = () => {
       <motion.div
         initial={{ opacity: 0, x: "50vw" }}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 0.7 }}
       >
         <Box sx={{ margin: "20px" }}>
           <Grid
@@ -28,7 +28,7 @@ export const Projects = () => {
             <Grid item>
               <motion.div
                 whileHover={{ scale: 1.1 }}
-                transition={{ type: "spring", bounce: 0.6, duration: 0.8 }}
+                transition={{ type: "spring", bounce: 0.6, duration: 0.5 }}
               >
                 <Card
                   sx={cardStyle}
@@ -39,7 +39,7 @@ export const Projects = () => {
                   <AspectRatio
                     objectFit="contain"
                     ratio="4/3"
-                    sx={{ height: "380px" }}
+                    // sx={{ height: "150px" }}
                   >
                     <img
                       style={imgStyle}
@@ -47,7 +47,7 @@ export const Projects = () => {
                       alt="Cape Cod Sharing Project"
                     />
                   </AspectRatio>
-                  <CardContent>
+                  <CardContent sx={{ padding: "10px" }}>
                     <Typography gutterBottom variant="h5" component="div">
                       Cape House Sharing
                     </Typography>
@@ -73,7 +73,7 @@ export const Projects = () => {
                   <AspectRatio
                     objectFit="contain"
                     ratio="4/3"
-                    sx={{ height: "380px" }}
+                    // sx={{ height: "150px" }}
                   >
                     <img
                       style={imgStyle}
@@ -81,7 +81,7 @@ export const Projects = () => {
                       alt="Todo App Project"
                     />
                   </AspectRatio>
-                  <CardContent>
+                  <CardContent sx={{ padding: "10px" }}>
                     <Typography gutterBottom variant="h5" component="div">
                       Todo App
                     </Typography>
@@ -107,7 +107,7 @@ export const Projects = () => {
                   <AspectRatio
                     objectFit="contain"
                     ratio="4/3"
-                    sx={{ height: "380px" }}
+                    // sx={{ height: "150px" }}
                   >
                     <img
                       style={imgStyle}
@@ -115,7 +115,7 @@ export const Projects = () => {
                       alt="Restaurant Page"
                     />
                   </AspectRatio>
-                  <CardContent>
+                  <CardContent sx={{ padding: "10px" }}>
                     <Typography gutterBottom variant="h5" component="div">
                       Bagan Restaurant
                     </Typography>
@@ -134,8 +134,8 @@ export const Projects = () => {
 };
 
 const cardStyle = {
-  width: "500px",
-  height: "500px",
+  width: "400px",
+  height: "400px",
   backgroundColor: "white",
 };
 

@@ -20,7 +20,7 @@ export const Home = () => {
     <motion.div
       initial={{ opacity: 0, x: "50vw" }}
       animate={{ opacity: 1, x: 0 }}
-      transition={{ duration: 1 }}
+      transition={{ duration: 0.7 }}
       exit={{ opacity: 0 }}
     >
       <Box sx={{ backgroundColor: "pink", margin: "20px" }}>

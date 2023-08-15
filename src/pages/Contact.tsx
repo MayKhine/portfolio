@@ -2,8 +2,6 @@ import { motion } from "framer-motion";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Card from "@mui/material/Card";
-import Button from "@mui/material/Button";
-import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
 import Link from "@mui/material/Link";
 
@@ -14,9 +12,16 @@ export const Contact = () => {
     <motion.div
       initial={{ opacity: 0, x: "50vw" }}
       animate={{ opacity: 1, x: 0 }}
-      transition={{ duration: 1 }}
+      transition={{ duration: 0.7 }}
     >
-      <Box sx={{ backgroundColor: "pink", margin: "20px" }}>
+      <Box
+        sx={{
+          backgroundColor: "pink",
+          marginLeft: "20%",
+          marginRight: "20%",
+          marginTop: "20px",
+        }}
+      >
         <Card
           sx={{
             display: "flex",
@@ -36,9 +41,12 @@ export const Contact = () => {
               Let's Chat!
             </Typography>
             <Typography variant="subtitle2" gutterBottom>
+              Thanks for visiting{" "}
+            </Typography>
+            <Typography variant="subtitle2" gutterBottom>
               Email: maykhine.mmk@gmail.com
             </Typography>
-            <div>
+            <div style={{ display: "flex", gap: "10px" }}>
               <Link
                 href="https://github.com/MayKhine"
                 underline="none"
@@ -46,7 +54,7 @@ export const Contact = () => {
                 target="_blank"
                 rel="noopener noreferrer "
               >
-                <GitHubIcon></GitHubIcon>
+                <GitHubIcon sx={{ width: "30px", height: "30px" }}></GitHubIcon>
               </Link>
               <Link
                 href="https://www.linkedin.com/in/maykhine/"
@@ -55,7 +63,9 @@ export const Contact = () => {
                 target="_blank"
                 rel="noopener noreferrer "
               >
-                <LinkedInIcon></LinkedInIcon>
+                <LinkedInIcon
+                  sx={{ width: "30px", height: "30px" }}
+                ></LinkedInIcon>
               </Link>
             </div>
           </CardContent>
@@ -63,10 +73,4 @@ export const Contact = () => {
       </Box>
     </motion.div>
   );
-};
-
-const ButtonStyle = {
-  color: "black",
-  padding: "10px",
-  borderRadius: "8px",
 };
