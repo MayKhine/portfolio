@@ -57,7 +57,7 @@ export const Home = () => {
           <CardContent
             sx={{
               flex: "1",
-              minWidth: "700px",
+              minWidth: "50%",
             }}
           >
             <Typography variant="h4" gutterBottom>

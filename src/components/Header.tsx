@@ -9,7 +9,7 @@ export const Header = () => {
       initial={{ opacity: 0, scale: 0.1 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 1 }}
-      style={{ height: "70px", marginTop: "2%", marginRight: "2%" }}
+      style={{ height: "70px", margin: "10px" }}
     >
       <div
         style={{
@@ -71,7 +71,7 @@ const ButtonStyle = {
   width: "150px",
   height: "50px",
   // margin: "10px",
-  marginRight: "10px",
+  marginLeft: "10px",
   border: "0px",
   fontSize: "1em",
   fontWeight: "bold",

@@ -37,11 +37,12 @@ export const About = () => {
             component="img"
             image={imgUrl}
             alt="profile pic"
-            sx={{ width: "400px" }}
+            sx={{ width: "400px", height: "400px" }}
           ></CardMedia>
           <CardContent
             sx={{
               flex: "1",
+              minWidth: "50%",
             }}
           >
             <Typography variant="h4" sx={txtParagraphStyle}>

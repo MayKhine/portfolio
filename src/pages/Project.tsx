@@ -43,7 +43,6 @@ export const Project = () => {
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
-                    backgroundColor: "lightyellow",
                     marginTop: "300px",
                     alignSelf: "center",
                   }}
