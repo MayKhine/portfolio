@@ -9,7 +9,7 @@ export const Header = () => {
       initial={{ opacity: 0, scale: 0.1 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 1 }}
-      style={{ height: "70px", marginTop: "10px", marginRight: "10px" }}
+      style={{ height: "70px", marginTop: "2%", marginRight: "2%" }}
     >
       <div
         style={{

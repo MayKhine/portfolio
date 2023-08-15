@@ -8,15 +8,12 @@ import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const ButtonStyle = {
-  // color: "#c4c4bb",
   backgroundColor: "white",
   opacity: "0.3",
   padding: "10px",
   borderRadius: "8px",
-  // background: "lightpink",
   width: "150px",
   height: "50px",
-  // margin: "10px",
   marginRight: "10px",
   border: "0px",
   fontSize: "1em",
@@ -37,7 +34,7 @@ export const Home = () => {
         sx={{
           display: "flex",
           justifyContent: "center",
-          marginTop: "5%",
+          marginTop: "3%",
         }}
       >
         <Card
@@ -47,7 +44,7 @@ export const Home = () => {
             flexWrap: "wrap",
             justifyContent: "center",
             backgroundColor: "transparent",
-            width: "80%",
+            width: "1200px",
             boxShadow: "none",
           }}
         >
@@ -60,13 +57,19 @@ export const Home = () => {
           <CardContent
             sx={{
               flex: "1",
-              minWidth: "300px",
+              minWidth: "700px",
             }}
           >
-            <Typography variant="h4" gutterBottom sx={{ color: "#fafaf0" }}>
-              Hi, I am May, a Boston-based front-end developer with a knack for
-              creative problem solving.
+            <Typography variant="h4" gutterBottom>
+              <span style={{ color: "#f2f2dc" }}>
+                Hi, I am May, a Boston-based front-end developer with a knack
+                for
+              </span>
+              <span style={{ color: "#8bcbe0" }}>
+                {" creative problem solving."}
+              </span>
             </Typography>
+
             <Typography variant="h6" gutterBottom sx={{ color: "#c4c4bb" }}>
               I have 3+ years of experience in database development and custom
               reporting. I am on a mission to pivot my careet into web

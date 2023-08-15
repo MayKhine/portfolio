@@ -16,10 +16,9 @@ export const Contact = () => {
     >
       <Box
         sx={{
-          backgroundColor: "pink",
-          marginLeft: "20%",
-          marginRight: "20%",
-          marginTop: "20px",
+          display: "flex",
+          justifyContent: "center",
+          marginTop: "3%",
         }}
       >
         <Card
@@ -28,11 +27,15 @@ export const Contact = () => {
             flexDirection: "row",
             flexWrap: "wrap",
             justifyContent: "center",
+            backgroundColor: "transparent",
+            width: "800px",
+            boxShadow: "none",
+            color: "#f2f2dc",
+            opacity: ".9",
           }}
         >
           <CardContent
             sx={{
-              backgroundColor: "lightyellow",
               flex: "1",
               minWidth: "300px",
             }}

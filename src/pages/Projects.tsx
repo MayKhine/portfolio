@@ -18,7 +18,9 @@ export const Projects = () => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.7 }}
       >
-        <Box sx={{ margin: "20px" }}>
+        <Box
+          sx={{ display: "flex", justifyContent: "center", marginTop: "5%" }}
+        >
           <Grid
             container
             rowSpacing={4}
