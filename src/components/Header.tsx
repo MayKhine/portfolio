@@ -64,14 +64,16 @@ export const Header = () => {
 };
 
 const ButtonStyle = {
-  // color: "white",
   padding: "10px",
   borderRadius: "8px",
-  background: "lightpink",
+  background: "white",
+  opacity: "0.3",
   width: "150px",
   height: "50px",
-  margin: "10px",
+  // margin: "10px",
+  marginRight: "10px",
   border: "0px",
   fontSize: "1em",
   fontWeight: "bold",
+  cursor: "pointer",
 };

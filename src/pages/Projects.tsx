@@ -131,8 +131,10 @@ export const Projects = () => {
 
 const cardStyle = {
   width: "400px",
-  height: "400px",
+  height: "410px",
   backgroundColor: "white",
+  cursor: "pointer",
+  borderRadius: "10px",
 };
 
 const imgStyle = {

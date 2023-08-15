@@ -1,4 +1,3 @@
-import CssBaseline from "@mui/material/CssBaseline";
 import { Home } from "./pages/Home";
 import { Projects } from "./pages/Projects";
 import { About } from "./pages/About";
@@ -11,7 +10,7 @@ import { AnimatePresence } from "framer-motion";
 
 function App() {
   return (
-    <>
+    <div>
       <AnimatePresence>
         <BrowserRouter>
           <Header />
@@ -24,7 +23,7 @@ function App() {
           </Routes>
         </BrowserRouter>
       </AnimatePresence>
-    </>
+    </div>
   );
 }
 
