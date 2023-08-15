@@ -36,11 +36,7 @@ export const Projects = () => {
                     navigate(`/Projects/${"CapeHouse"}`);
                   }}
                 >
-                  <AspectRatio
-                    objectFit="contain"
-                    ratio="4/3"
-                    // sx={{ height: "150px" }}
-                  >
+                  <AspectRatio objectFit="contain" ratio="4/3">
                     <img
                       style={imgStyle}
                       src={projectsData.capehouse.img[0]}

@@ -1,3 +1,4 @@
+import CssBaseline from "@mui/material/CssBaseline";
 import { Home } from "./pages/Home";
 import { Projects } from "./pages/Projects";
 import { About } from "./pages/About";
