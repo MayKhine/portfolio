@@ -1,7 +1,7 @@
 {
   "capehouse": {
     "name": "Cape House Sharing",
-    "desc": "Hi this is a made up project desc for cape house",
+    "desc": "A web app to visualize availability, to make easy booking and to share the Cape Cod house among family members. This is my first TypeScript project and I used Express.js server. ",
     "url": "",
     "git": "https://github.com/MayKhine/capeProject",
     "technology": "TypeScript, REACT",

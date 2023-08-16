@@ -4,7 +4,7 @@ import Typography from "@mui/material/Typography";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-import imgUrl from "../assets/images/img.jpg";
+import imgUrl from "../assets/images/img.jpeg";
 import { textColor } from "../styles";
 export const About = () => {
   return (
@@ -36,7 +36,14 @@ export const About = () => {
             component="img"
             image={imgUrl}
             alt="profile pic"
-            sx={{ width: "400px", height: "400px" }}
+            sx={{
+              width: "400px",
+              height: "400px",
+              marginLeft: "20px",
+              marginRight: "10px",
+              marginTop: "20px",
+              borderRadius: "40px",
+            }}
           ></CardMedia>
           <CardContent
             sx={{

@@ -4,10 +4,9 @@ import Typography from "@mui/material/Typography";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Link from "@mui/material/Link";
-
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-
+import { textColor } from "../styles";
 export const Contact = () => {
   return (
     <motion.div
@@ -31,7 +30,7 @@ export const Contact = () => {
             backgroundColor: "transparent",
             width: "800px",
             boxShadow: "none",
-            color: "#f2f2dc",
+            color: textColor,
             opacity: ".9",
           }}
         >

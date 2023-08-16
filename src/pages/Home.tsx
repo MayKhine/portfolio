@@ -3,7 +3,7 @@ import Typography from "@mui/material/Typography";
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
-import imgUrl from "../assets/images/img.jpg";
+import imgUrl from "../assets/images/profileImg.jpeg";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { orangeColor, ButtonStyle, textColor } from "../styles";
@@ -39,7 +39,13 @@ export const Home = () => {
             component="img"
             image={imgUrl}
             alt="profile pic"
-            sx={{ width: "400px", height: "400px" }}
+            sx={{
+              width: "300px",
+              height: "300px",
+              borderRadius: "180px",
+              marginRight: "20px",
+              marginLeft: "20px",
+            }}
           ></CardMedia>
           <CardContent
             sx={{
@@ -48,7 +54,7 @@ export const Home = () => {
             }}
           >
             <Typography variant="h4" gutterBottom>
-              <span style={{ color: { textColor } }}>
+              <span style={{ color: textColor }}>
                 Hi, I am May, a Boston-based front-end developer with a knack
                 for
               </span>

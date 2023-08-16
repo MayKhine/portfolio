@@ -1,7 +1,7 @@
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import { useLocation } from "react-router-dom";
-import projectsData from "../assets/projectsData.json";
+import _projectsData from "../assets/projectsData.json";
 import Link from "@mui/material/Link";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
@@ -10,15 +10,17 @@ import ArrowBackIosRoundedIcon from "@mui/icons-material/ArrowBackIosRounded";
 import ArrowForwardIosRoundedIcon from "@mui/icons-material/ArrowForwardIosRounded";
 import { Card, CardMedia, CardContent } from "@mui/material";
 import { textColor } from "../styles";
+import { ProjectsData } from "../types";
 
+const projectsData = _projectsData as ProjectsData;
 export const Project = () => {
   const location = useLocation();
   const projectName = location.pathname
     .toString()
     .substring(10)
     .toLocaleLowerCase();
-  const curProj: JSON = projectsData[projectName];
-  //   console.log("projectdata: ", curProj);
+
+  const curProj = projectsData[projectName];
 
   const images = curProj.img;
   const [[img, direction], setImg] = useState([0, 0]);
