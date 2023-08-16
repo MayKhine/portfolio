@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
+import { ButtonStyle, hoverMotion } from "../styles";
 
 export const Header = () => {
   const navigate = useNavigate();
@@ -9,7 +10,10 @@ export const Header = () => {
       initial={{ opacity: 0, scale: 0.1 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 1 }}
-      style={{ height: "70px", margin: "10px" }}
+      style={{
+        height: "60px",
+        paddingTop: "10px",
+      }}
     >
       <div
         style={{
@@ -19,7 +23,7 @@ export const Header = () => {
         }}
       >
         <motion.button
-          whileHover={{ scale: 1.1 }}
+          whileHover={hoverMotion}
           whileTap={{ scale: 0.8 }}
           onClick={() => {
             navigate("/");
@@ -29,7 +33,7 @@ export const Header = () => {
           HOME
         </motion.button>
         <motion.button
-          whileHover={{ scale: 1.1 }}
+          whileHover={hoverMotion}
           whileTap={{ scale: 0.8 }}
           onClick={() => {
             navigate("/Projects");
@@ -39,7 +43,7 @@ export const Header = () => {
           PROJECTS
         </motion.button>
         <motion.button
-          whileHover={{ scale: 1.1 }}
+          whileHover={hoverMotion}
           whileTap={{ scale: 0.8 }}
           onClick={() => {
             navigate("/About");
@@ -49,7 +53,7 @@ export const Header = () => {
           ABOUT
         </motion.button>
         <motion.button
-          whileHover={{ scale: 1.1 }}
+          whileHover={hoverMotion}
           whileTap={{ scale: 0.8 }}
           onClick={() => {
             navigate("/Contact");
@@ -63,17 +67,23 @@ export const Header = () => {
   );
 };
 
-const ButtonStyle = {
-  padding: "10px",
-  borderRadius: "8px",
-  background: "white",
-  opacity: "0.3",
-  width: "150px",
-  height: "50px",
-  // margin: "10px",
-  marginLeft: "10px",
-  border: "0px",
-  fontSize: "1em",
-  fontWeight: "bold",
-  cursor: "pointer",
-};
+// const ButtonStyle = {
+//   padding: "10px",
+//   borderRadius: "8px",
+//   background: "white",
+//   opacity: "0.3",
+//   width: "150px",
+//   height: "50px",
+//   // margin: "10px",
+//   marginLeft: "10px",
+//   border: "0px",
+//   fontSize: "1em",
+//   fontWeight: "bold",
+//   cursor: "pointer",
+// };
+
+// const hoverMotion = {
+//   scale: 1.1,
+//   backgroundColor: "#f27348",
+//   opacity: "1",
+// };

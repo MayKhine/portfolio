@@ -9,6 +9,7 @@ import { wrap } from "popmotion";
 import ArrowBackIosRoundedIcon from "@mui/icons-material/ArrowBackIosRounded";
 import ArrowForwardIosRoundedIcon from "@mui/icons-material/ArrowForwardIosRounded";
 import { Card, CardMedia, CardContent } from "@mui/material";
+import { textColor } from "../styles";
 
 export const Project = () => {
   const location = useLocation();
@@ -28,15 +29,16 @@ export const Project = () => {
   };
 
   return (
-    <div>
+    <div style={{ height: "calc(100% - 80px)" }}>
       <motion.div
         initial={{ opacity: 0, x: "50vw" }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.7 }}
+        style={{ height: "100%" }}
       >
-        <Box>
+        <Box style={{ height: "100%" }}>
           {images && (
-            <Card sx={{ backgroundColor: "white" }}>
+            <Card style={{ backgroundColor: "#c0e4eb", height: "100%" }}>
               <CardMedia>
                 <div
                   style={{
@@ -102,14 +104,16 @@ export const Project = () => {
                   }}
                 >
                   <ArrowBackIosRoundedIcon
+                    style={{ color: textColor }}
                     onClick={() => paginate(1)}
                   ></ArrowBackIosRoundedIcon>
 
                   <ArrowForwardIosRoundedIcon
+                    style={{ color: textColor }}
                     onClick={() => paginate(-1)}
                   ></ArrowForwardIosRoundedIcon>
                 </div>
-                <div style={{ marginTop: "10px" }}>
+                <div style={{ marginTop: "10px", color: textColor }}>
                   <Link
                     href={curProj.url}
                     underline="none"
@@ -198,7 +202,7 @@ export const Project = () => {
                   {curProj.technology}
                 </Typography>
 
-                <div style={{ display: "flex" }}>
+                <div style={{ display: "flex", color: textColor }}>
                   {curProj.url && (
                     <>
                       <Link
@@ -214,10 +218,7 @@ export const Project = () => {
                       </Link>
                       <Typography
                         style={{ marginLeft: "10px", marginRight: "10px" }}
-                      >
-                        {" "}
-                        |{" "}
-                      </Typography>
+                      ></Typography>
                     </>
                   )}
 

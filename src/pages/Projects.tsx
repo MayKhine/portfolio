@@ -7,7 +7,7 @@ import Grid from "@mui/material/Grid";
 import { useNavigate } from "react-router-dom";
 import projectsData from "../assets/projectsData.json";
 import AspectRatio from "@mui/joy/AspectRatio";
-
+import { cardStyle, imgStyle, projectCardTextColor } from "../styles";
 export const Projects = () => {
   const navigate = useNavigate();
 
@@ -19,7 +19,7 @@ export const Projects = () => {
         transition={{ duration: 0.7 }}
       >
         <Box
-          sx={{ display: "flex", justifyContent: "center", marginTop: "5%" }}
+          sx={{ display: "flex", justifyContent: "center", marginTop: "3%" }}
         >
           <Grid
             container
@@ -49,7 +49,7 @@ export const Projects = () => {
                     <Typography gutterBottom variant="h5" component="div">
                       Cape House Sharing
                     </Typography>
-                    <Typography variant="body2" color="text.secondary">
+                    <Typography variant="body2" color={projectCardTextColor}>
                       A web app to visualize availabilty, to make easy booking
                       and to share the Cape Cod House among family members
                     </Typography>
@@ -68,11 +68,7 @@ export const Projects = () => {
                     navigate(`/Projects/${"todoApp"}`);
                   }}
                 >
-                  <AspectRatio
-                    objectFit="contain"
-                    ratio="4/3"
-                    // sx={{ height: "150px" }}
-                  >
+                  <AspectRatio objectFit="contain" ratio="4/3">
                     <img
                       style={imgStyle}
                       src={projectsData.todoapp.img[0]}
@@ -83,7 +79,7 @@ export const Projects = () => {
                     <Typography gutterBottom variant="h5" component="div">
                       Todo App
                     </Typography>
-                    <Typography variant="body2" color="text.secondary">
+                    <Typography variant="body2" color={projectCardTextColor}>
                       A task management app to organize, prioritize and conquer
                       to-do list effortlessly. Say 'Hello' to productivity!
                     </Typography>
@@ -117,7 +113,7 @@ export const Projects = () => {
                     <Typography gutterBottom variant="h5" component="div">
                       Bagan Restaurant
                     </Typography>
-                    <Typography variant="body2" color="text.secondary">
+                    <Typography variant="body2" color={projectCardTextColor}>
                       A simple restaurant page
                     </Typography>
                   </CardContent>
@@ -129,17 +125,4 @@ export const Projects = () => {
       </motion.div>
     </>
   );
-};
-
-const cardStyle = {
-  width: "400px",
-  height: "410px",
-  backgroundColor: "#8b7fa1",
-  cursor: "pointer",
-  borderRadius: "10px",
-};
-
-const imgStyle = {
-  backgroundColor: "transperant",
-  shadow: "none",
 };

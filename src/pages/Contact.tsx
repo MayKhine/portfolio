@@ -7,6 +7,7 @@ import Link from "@mui/material/Link";
 
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+
 export const Contact = () => {
   return (
     <motion.div

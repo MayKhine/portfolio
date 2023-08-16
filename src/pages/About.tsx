@@ -5,7 +5,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import imgUrl from "../assets/images/img.jpg";
-
+import { textColor } from "../styles";
 export const About = () => {
   return (
     <motion.div
@@ -29,7 +29,6 @@ export const About = () => {
             backgroundColor: "transparent",
             width: "1300px",
             boxShadow: "none",
-            color: "#f2f2dc",
             opacity: ".9",
           }}
         >
@@ -43,6 +42,7 @@ export const About = () => {
             sx={{
               flex: "1",
               minWidth: "50%",
+              color: textColor,
             }}
           >
             <Typography variant="h4" sx={txtParagraphStyle}>

@@ -7,10 +7,17 @@ import { Project } from "./pages/Project";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import { AnimatePresence } from "framer-motion";
+import { backGroundColor } from "./styles";
 
 function App() {
   return (
-    <div>
+    <div
+      style={{
+        backgroundColor: backGroundColor,
+        width: "100%",
+        height: "100%",
+      }}
+    >
       <AnimatePresence>
         <BrowserRouter>
           <Header />

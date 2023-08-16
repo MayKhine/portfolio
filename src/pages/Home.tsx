@@ -6,20 +6,7 @@ import CardContent from "@mui/material/CardContent";
 import imgUrl from "../assets/images/img.jpg";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-
-const ButtonStyle = {
-  backgroundColor: "white",
-  opacity: "0.3",
-  padding: "10px",
-  borderRadius: "8px",
-  width: "150px",
-  height: "50px",
-  marginRight: "10px",
-  border: "0px",
-  fontSize: "1em",
-  fontWeight: "bold",
-  cursor: "pointer",
-};
+import { orangeColor, ButtonStyle, textColor } from "../styles";
 
 export const Home = () => {
   const navigate = useNavigate();
@@ -61,16 +48,16 @@ export const Home = () => {
             }}
           >
             <Typography variant="h4" gutterBottom>
-              <span style={{ color: "#f2f2dc" }}>
+              <span style={{ color: { textColor } }}>
                 Hi, I am May, a Boston-based front-end developer with a knack
                 for
               </span>
-              <span style={{ color: "#8bcbe0" }}>
+              <span style={{ color: orangeColor }}>
                 {" creative problem solving."}
               </span>
             </Typography>
 
-            <Typography variant="h6" gutterBottom sx={{ color: "#c4c4bb" }}>
+            <Typography variant="h6" gutterBottom sx={{ color: { textColor } }}>
               I have 3+ years of experience in database development and custom
               reporting. I am on a mission to pivot my careet into web
               development. Passionate about innovation and design, I am
@@ -78,7 +65,11 @@ export const Home = () => {
             </Typography>
 
             <motion.button
-              whileHover={{ scale: 1.1 }}
+              whileHover={{
+                scale: 1.1,
+                backgroundColor: "#f27348",
+                opacity: "1",
+              }}
               whileTap={{ scale: 0.8 }}
               onClick={() => {
                 navigate("/Contact");
@@ -88,7 +79,11 @@ export const Home = () => {
               Get in touch
             </motion.button>
             <motion.button
-              whileHover={{ scale: 1.1 }}
+              whileHover={{
+                scale: 1.1,
+                backgroundColor: "#f27348",
+                opacity: "1",
+              }}
               whileTap={{ scale: 0.8 }}
               onClick={() => {
                 navigate("/Projects");
