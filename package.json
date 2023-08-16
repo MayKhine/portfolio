@@ -7,9 +7,10 @@
     "start": "vite",
     "build": "tsc && vite build",
     "predeploy": "pnpm build",
-    "deploy": "gh-pages -d dist",
+    "deploy:gh-pages": "gh-pages -d dist",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "clean:gh-pages": "git push origin --delete gh-pages"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
