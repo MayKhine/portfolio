@@ -21,13 +21,17 @@ function App() {
       <AnimatePresence>
         <BrowserRouter>
           <Header />
+
           <Routes>
             <Route path="*" element={<Home />}></Route>
-            <Route path="/" element={<Home />}></Route>
-            <Route path="/Projects" element={<Projects />}></Route>
-            <Route path="/About" element={<About />}></Route>
-            <Route path="/Contact" element={<Contact />}></Route>
-            <Route path="/Projects/:ProjectName" element={<Project />}></Route>
+            <Route path="/Portfolio/Home" element={<Home />}></Route>
+            <Route path="/Portfolio/Projects" element={<Projects />}></Route>
+            <Route path="/Portfolio/About" element={<About />}></Route>
+            <Route path="/Portfolio/Contact" element={<Contact />}></Route>
+            <Route
+              path="/Portfolio/Projects/:ProjectName"
+              element={<Project />}
+            ></Route>
           </Routes>
         </BrowserRouter>
       </AnimatePresence>

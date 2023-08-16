@@ -78,7 +78,7 @@ export const Home = () => {
               }}
               whileTap={{ scale: 0.8 }}
               onClick={() => {
-                navigate("/Contact");
+                navigate("/Portfolio/Contact");
               }}
               style={ButtonStyle}
             >
@@ -92,7 +92,7 @@ export const Home = () => {
               }}
               whileTap={{ scale: 0.8 }}
               onClick={() => {
-                navigate("/Projects");
+                navigate("/Portfolio/Projects");
               }}
               style={ButtonStyle}
             >

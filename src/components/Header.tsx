@@ -26,7 +26,7 @@ export const Header = () => {
           whileHover={hoverMotion}
           whileTap={{ scale: 0.8 }}
           onClick={() => {
-            navigate("/");
+            navigate("/Portfolio/Home");
           }}
           style={ButtonStyle}
         >
@@ -36,7 +36,7 @@ export const Header = () => {
           whileHover={hoverMotion}
           whileTap={{ scale: 0.8 }}
           onClick={() => {
-            navigate("/Projects");
+            navigate("/Portfolio/Projects");
           }}
           style={ButtonStyle}
         >
@@ -46,7 +46,7 @@ export const Header = () => {
           whileHover={hoverMotion}
           whileTap={{ scale: 0.8 }}
           onClick={() => {
-            navigate("/About");
+            navigate("/Portfolio/About");
           }}
           style={ButtonStyle}
         >
@@ -56,7 +56,7 @@ export const Header = () => {
           whileHover={hoverMotion}
           whileTap={{ scale: 0.8 }}
           onClick={() => {
-            navigate("/Contact");
+            navigate("/Portfolio/Contact");
           }}
           style={ButtonStyle}
         >
