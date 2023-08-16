@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "start": "vite",
-    "build": "tsc && vite build",
-    "predeploy": "run build",
-    "deploy": "gh-pages-clean gh-pages -d build",
+    "build": "tsc && vite dist",
+    "predeploy": "run dist",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
