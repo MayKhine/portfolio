@@ -75,6 +75,7 @@ export const Project = () => {
                       dragConstraints={{ left: 0, right: 0 }}
                       dragElastic={1}
                       onDragEnd={(e, { offset, velocity }) => {
+                        console.log("e", e);
                         const swipe = Math.abs(offset.x) * velocity.x;
                         if (swipe < -10000) {
                           paginate(1);
